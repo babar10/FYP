@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1814B57F27F37C4600DDB0F5 /* AdminDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814B57E27F37C4600DDB0F5 /* AdminDashboardViewController.swift */; };
+		1814B58427F38F8400DDB0F5 /* DonorDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814B58327F38F8400DDB0F5 /* DonorDashboardViewController.swift */; };
+		1814B58927F3907D00DDB0F5 /* FeildworkerDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814B58827F3907D00DDB0F5 /* FeildworkerDashboardViewController.swift */; };
+		183DE8B027EAEEAB002E2177 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DE8AF27EAEEAB002E2177 /* LoginViewController.swift */; };
+		183DE8B527EB02C9002E2177 /* APIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DE8B427EB02C9002E2177 /* APIWrapper.swift */; };
+		183DE8BA27EB0C22002E2177 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DE8B927EB0C22002E2177 /* Users.swift */; };
+		18444BCD27FED8FB006E949D /* RepresentatorDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18444BCC27FED8FB006E949D /* RepresentatorDashboardViewController.swift */; };
+		1844561728036F900023F264 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844561628036F900023F264 /* HomeViewController.swift */; };
+		18468CEF27FF7CDD00F786C3 /* ManageRepresentatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18468CEE27FF7CDD00F786C3 /* ManageRepresentatorViewController.swift */; };
+		1847F0A227FDA3D500FFE256 /* Representator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F0A127FDA3D500FFE256 /* Representator.swift */; };
+		185B97542803BCCC00837D07 /* ManageFeildworkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B97532803BCCC00837D07 /* ManageFeildworkerViewController.swift */; };
+		185B97592803C0A400837D07 /* ManageOrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B97582803C0A400837D07 /* ManageOrganizationViewController.swift */; };
+		18677C8927EA5A360094DDE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677C8827EA5A360094DDE8 /* AppDelegate.swift */; };
+		18677C8B27EA5A360094DDE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677C8A27EA5A360094DDE8 /* SceneDelegate.swift */; };
+		18677C8D27EA5A360094DDE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677C8C27EA5A360094DDE8 /* ViewController.swift */; };
+		18677C9027EA5A360094DDE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18677C8E27EA5A360094DDE8 /* Main.storyboard */; };
+		18677C9227EA5A370094DDE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18677C9127EA5A370094DDE8 /* Assets.xcassets */; };
+		18677C9527EA5A370094DDE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18677C9327EA5A370094DDE8 /* LaunchScreen.storyboard */; };
+		18677CA027EA5A380094DDE8 /* Sadqa_And_Zakat_FinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677C9F27EA5A380094DDE8 /* Sadqa_And_Zakat_FinalTests.swift */; };
+		18677CAB27EA5A380094DDE8 /* Sadqa_And_Zakat_FinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677CAA27EA5A380094DDE8 /* Sadqa_And_Zakat_FinalUITests.swift */; };
+		18677CCC27EA65450094DDE8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677CCB27EA65450094DDE8 /* CustomTextField.swift */; };
+		18677CD127EA698E0094DDE8 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677CD027EA698E0094DDE8 /* SignUpButton.swift */; };
+		187FBA4127FCC2DB0049EA41 /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FBA4027FCC2DB0049EA41 /* Admin.swift */; };
+		187FBA4627FCCD4D0049EA41 /* Donor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FBA4527FCCD4D0049EA41 /* Donor.swift */; };
+		187FBA4B27FCD2D10049EA41 /* Feildworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FBA4A27FCD2D10049EA41 /* Feildworker.swift */; };
+		18F1FE73281D3E83005A1985 /* PendingRepresentatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1FE72281D3E83005A1985 /* PendingRepresentatorViewController.swift */; };
+		18F1FE78281D5C44005A1985 /* PendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1FE77281D5C44005A1985 /* PendingTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18677C9C27EA5A380094DDE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18677C7D27EA5A360094DDE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18677C8427EA5A360094DDE8;
+			remoteInfo = "Sadqa And Zakat Final";
+		};
+		18677CA727EA5A380094DDE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18677C7D27EA5A360094DDE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18677C8427EA5A360094DDE8;
+			remoteInfo = "Sadqa And Zakat Final";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1814B57E27F37C4600DDB0F5 /* AdminDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardViewController.swift; sourceTree = "<group>"; };
+		1814B58327F38F8400DDB0F5 /* DonorDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorDashboardViewController.swift; sourceTree = "<group>"; };
+		1814B58827F3907D00DDB0F5 /* FeildworkerDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeildworkerDashboardViewController.swift; sourceTree = "<group>"; };
+		183DE8AF27EAEEAB002E2177 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		183DE8B427EB02C9002E2177 /* APIWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIWrapper.swift; path = ../../../APIWrapper.swift; sourceTree = "<group>"; };
+		183DE8B927EB0C22002E2177 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		18444BCC27FED8FB006E949D /* RepresentatorDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentatorDashboardViewController.swift; sourceTree = "<group>"; };
+		1844561628036F900023F264 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18468CEE27FF7CDD00F786C3 /* ManageRepresentatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageRepresentatorViewController.swift; sourceTree = "<group>"; };
+		1847F0A127FDA3D500FFE256 /* Representator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representator.swift; sourceTree = "<group>"; };
+		185B97532803BCCC00837D07 /* ManageFeildworkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageFeildworkerViewController.swift; sourceTree = "<group>"; };
+		185B97582803C0A400837D07 /* ManageOrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageOrganizationViewController.swift; sourceTree = "<group>"; };
+		18677C8527EA5A360094DDE8 /* Sadqa And Zakat Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sadqa And Zakat Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18677C8827EA5A360094DDE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18677C8A27EA5A360094DDE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18677C8C27EA5A360094DDE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18677C8F27EA5A360094DDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18677C9127EA5A370094DDE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18677C9427EA5A370094DDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18677C9627EA5A370094DDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18677C9B27EA5A380094DDE8 /* Sadqa And Zakat FinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sadqa And Zakat FinalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18677C9F27EA5A380094DDE8 /* Sadqa_And_Zakat_FinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sadqa_And_Zakat_FinalTests.swift; sourceTree = "<group>"; };
+		18677CA127EA5A380094DDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18677CA627EA5A380094DDE8 /* Sadqa And Zakat FinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sadqa And Zakat FinalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18677CAA27EA5A380094DDE8 /* Sadqa_And_Zakat_FinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sadqa_And_Zakat_FinalUITests.swift; sourceTree = "<group>"; };
+		18677CAC27EA5A380094DDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18677CCB27EA65450094DDE8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		18677CD027EA698E0094DDE8 /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
+		187FBA4027FCC2DB0049EA41 /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
+		187FBA4527FCCD4D0049EA41 /* Donor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donor.swift; sourceTree = "<group>"; };
+		187FBA4A27FCD2D10049EA41 /* Feildworker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feildworker.swift; sourceTree = "<group>"; };
+		18F1FE72281D3E83005A1985 /* PendingRepresentatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingRepresentatorViewController.swift; sourceTree = "<group>"; };
+		18F1FE77281D5C44005A1985 /* PendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18677C8227EA5A360094DDE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18677C9827EA5A380094DDE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18677CA327EA5A380094DDE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18677C7C27EA5A360094DDE8 = {
+			isa = PBXGroup;
+			children = (
+				18677C8727EA5A360094DDE8 /* Sadqa And Zakat Final */,
+				18677C9E27EA5A380094DDE8 /* Sadqa And Zakat FinalTests */,
+				18677CA927EA5A380094DDE8 /* Sadqa And Zakat FinalUITests */,
+				18677C8627EA5A360094DDE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18677C8627EA5A360094DDE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18677C8527EA5A360094DDE8 /* Sadqa And Zakat Final.app */,
+				18677C9B27EA5A380094DDE8 /* Sadqa And Zakat FinalTests.xctest */,
+				18677CA627EA5A380094DDE8 /* Sadqa And Zakat FinalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18677C8727EA5A360094DDE8 /* Sadqa And Zakat Final */ = {
+			isa = PBXGroup;
+			children = (
+				183DE8B427EB02C9002E2177 /* APIWrapper.swift */,
+				18677C8827EA5A360094DDE8 /* AppDelegate.swift */,
+				18677C8A27EA5A360094DDE8 /* SceneDelegate.swift */,
+				18677C8C27EA5A360094DDE8 /* ViewController.swift */,
+				18677C8E27EA5A360094DDE8 /* Main.storyboard */,
+				18F1FE72281D3E83005A1985 /* PendingRepresentatorViewController.swift */,
+				185B97582803C0A400837D07 /* ManageOrganizationViewController.swift */,
+				185B97532803BCCC00837D07 /* ManageFeildworkerViewController.swift */,
+				1844561628036F900023F264 /* HomeViewController.swift */,
+				18468CEE27FF7CDD00F786C3 /* ManageRepresentatorViewController.swift */,
+				18444BCC27FED8FB006E949D /* RepresentatorDashboardViewController.swift */,
+				1814B58827F3907D00DDB0F5 /* FeildworkerDashboardViewController.swift */,
+				1814B58327F38F8400DDB0F5 /* DonorDashboardViewController.swift */,
+				1814B57E27F37C4600DDB0F5 /* AdminDashboardViewController.swift */,
+				183DE8AF27EAEEAB002E2177 /* LoginViewController.swift */,
+				18677CD027EA698E0094DDE8 /* SignUpButton.swift */,
+				18677CCB27EA65450094DDE8 /* CustomTextField.swift */,
+				18677C9127EA5A370094DDE8 /* Assets.xcassets */,
+				18677C9327EA5A370094DDE8 /* LaunchScreen.storyboard */,
+				18677C9627EA5A370094DDE8 /* Info.plist */,
+				183DE8B927EB0C22002E2177 /* Users.swift */,
+				187FBA4027FCC2DB0049EA41 /* Admin.swift */,
+				187FBA4527FCCD4D0049EA41 /* Donor.swift */,
+				187FBA4A27FCD2D10049EA41 /* Feildworker.swift */,
+				1847F0A127FDA3D500FFE256 /* Representator.swift */,
+				18F1FE77281D5C44005A1985 /* PendingTableViewCell.swift */,
+			);
+			path = "Sadqa And Zakat Final";
+			sourceTree = "<group>";
+		};
+		18677C9E27EA5A380094DDE8 /* Sadqa And Zakat FinalTests */ = {
+			isa = PBXGroup;
+			children = (
+				18677C9F27EA5A380094DDE8 /* Sadqa_And_Zakat_FinalTests.swift */,
+				18677CA127EA5A380094DDE8 /* Info.plist */,
+			);
+			path = "Sadqa And Zakat FinalTests";
+			sourceTree = "<group>";
+		};
+		18677CA927EA5A380094DDE8 /* Sadqa And Zakat FinalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18677CAA27EA5A380094DDE8 /* Sadqa_And_Zakat_FinalUITests.swift */,
+				18677CAC27EA5A380094DDE8 /* Info.plist */,
+			);
+			path = "Sadqa And Zakat FinalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18677C8427EA5A360094DDE8 /* Sadqa And Zakat Final */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18677CAF27EA5A380094DDE8 /* Build configuration list for PBXNativeTarget "Sadqa And Zakat Final" */;
+			buildPhases = (
+				18677C8127EA5A360094DDE8 /* Sources */,
+				18677C8227EA5A360094DDE8 /* Frameworks */,
+				18677C8327EA5A360094DDE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sadqa And Zakat Final";
+			productName = "Sadqa And Zakat Final";
+			productReference = 18677C8527EA5A360094DDE8 /* Sadqa And Zakat Final.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18677C9A27EA5A380094DDE8 /* Sadqa And Zakat FinalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18677CB227EA5A380094DDE8 /* Build configuration list for PBXNativeTarget "Sadqa And Zakat FinalTests" */;
+			buildPhases = (
+				18677C9727EA5A380094DDE8 /* Sources */,
+				18677C9827EA5A380094DDE8 /* Frameworks */,
+				18677C9927EA5A380094DDE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18677C9D27EA5A380094DDE8 /* PBXTargetDependency */,
+			);
+			name = "Sadqa And Zakat FinalTests";
+			productName = "Sadqa And Zakat FinalTests";
+			productReference = 18677C9B27EA5A380094DDE8 /* Sadqa And Zakat FinalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18677CA527EA5A380094DDE8 /* Sadqa And Zakat FinalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18677CB527EA5A380094DDE8 /* Build configuration list for PBXNativeTarget "Sadqa And Zakat FinalUITests" */;
+			buildPhases = (
+				18677CA227EA5A380094DDE8 /* Sources */,
+				18677CA327EA5A380094DDE8 /* Frameworks */,
+				18677CA427EA5A380094DDE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18677CA827EA5A380094DDE8 /* PBXTargetDependency */,
+			);
+			name = "Sadqa And Zakat FinalUITests";
+			productName = "Sadqa And Zakat FinalUITests";
+			productReference = 18677CA627EA5A380094DDE8 /* Sadqa And Zakat FinalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18677C7D27EA5A360094DDE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					18677C8427EA5A360094DDE8 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					18677C9A27EA5A380094DDE8 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 18677C8427EA5A360094DDE8;
+					};
+					18677CA527EA5A380094DDE8 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 18677C8427EA5A360094DDE8;
+					};
+				};
+			};
+			buildConfigurationList = 18677C8027EA5A360094DDE8 /* Build configuration list for PBXProject "Sadqa And Zakat Final" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18677C7C27EA5A360094DDE8;
+			productRefGroup = 18677C8627EA5A360094DDE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18677C8427EA5A360094DDE8 /* Sadqa And Zakat Final */,
+				18677C9A27EA5A380094DDE8 /* Sadqa And Zakat FinalTests */,
+				18677CA527EA5A380094DDE8 /* Sadqa And Zakat FinalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18677C8327EA5A360094DDE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18677C9527EA5A370094DDE8 /* LaunchScreen.storyboard in Resources */,
+				18677C9227EA5A370094DDE8 /* Assets.xcassets in Resources */,
+				18677C9027EA5A360094DDE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18677C9927EA5A380094DDE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18677CA427EA5A380094DDE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18677C8127EA5A360094DDE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18468CEF27FF7CDD00F786C3 /* ManageRepresentatorViewController.swift in Sources */,
+				1814B58427F38F8400DDB0F5 /* DonorDashboardViewController.swift in Sources */,
+				1814B57F27F37C4600DDB0F5 /* AdminDashboardViewController.swift in Sources */,
+				183DE8BA27EB0C22002E2177 /* Users.swift in Sources */,
+				18F1FE73281D3E83005A1985 /* PendingRepresentatorViewController.swift in Sources */,
+				183DE8B027EAEEAB002E2177 /* LoginViewController.swift in Sources */,
+				185B97542803BCCC00837D07 /* ManageFeildworkerViewController.swift in Sources */,
+				1844561728036F900023F264 /* HomeViewController.swift in Sources */,
+				18677CCC27EA65450094DDE8 /* CustomTextField.swift in Sources */,
+				187FBA4627FCCD4D0049EA41 /* Donor.swift in Sources */,
+				1814B58927F3907D00DDB0F5 /* FeildworkerDashboardViewController.swift in Sources */,
+				18677C8D27EA5A360094DDE8 /* ViewController.swift in Sources */,
+				187FBA4B27FCD2D10049EA41 /* Feildworker.swift in Sources */,
+				18F1FE78281D5C44005A1985 /* PendingTableViewCell.swift in Sources */,
+				187FBA4127FCC2DB0049EA41 /* Admin.swift in Sources */,
+				18444BCD27FED8FB006E949D /* RepresentatorDashboardViewController.swift in Sources */,
+				18677C8927EA5A360094DDE8 /* AppDelegate.swift in Sources */,
+				18677C8B27EA5A360094DDE8 /* SceneDelegate.swift in Sources */,
+				183DE8B527EB02C9002E2177 /* APIWrapper.swift in Sources */,
+				1847F0A227FDA3D500FFE256 /* Representator.swift in Sources */,
+				185B97592803C0A400837D07 /* ManageOrganizationViewController.swift in Sources */,
+				18677CD127EA698E0094DDE8 /* SignUpButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18677C9727EA5A380094DDE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18677CA027EA5A380094DDE8 /* Sadqa_And_Zakat_FinalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18677CA227EA5A380094DDE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18677CAB27EA5A380094DDE8 /* Sadqa_And_Zakat_FinalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18677C9D27EA5A380094DDE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18677C8427EA5A360094DDE8 /* Sadqa And Zakat Final */;
+			targetProxy = 18677C9C27EA5A380094DDE8 /* PBXContainerItemProxy */;
+		};
+		18677CA827EA5A380094DDE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18677C8427EA5A360094DDE8 /* Sadqa And Zakat Final */;
+			targetProxy = 18677CA727EA5A380094DDE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18677C8E27EA5A360094DDE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18677C8F27EA5A360094DDE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18677C9327EA5A370094DDE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18677C9427EA5A370094DDE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18677CAD27EA5A380094DDE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18677CAE27EA5A380094DDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18677CB027EA5A380094DDE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sadqa And Zakat Final/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SadqaAndZakat01.Sadqa-And-Zakat-Final";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18677CB127EA5A380094DDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sadqa And Zakat Final/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SadqaAndZakat01.Sadqa-And-Zakat-Final";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18677CB327EA5A380094DDE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sadqa And Zakat FinalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SadqaAndZakat01.Sadqa-And-Zakat-FinalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sadqa And Zakat Final.app/Sadqa And Zakat Final";
+			};
+			name = Debug;
+		};
+		18677CB427EA5A380094DDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sadqa And Zakat FinalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SadqaAndZakat01.Sadqa-And-Zakat-FinalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sadqa And Zakat Final.app/Sadqa And Zakat Final";
+			};
+			name = Release;
+		};
+		18677CB627EA5A380094DDE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sadqa And Zakat FinalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SadqaAndZakat01.Sadqa-And-Zakat-FinalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sadqa And Zakat Final";
+			};
+			name = Debug;
+		};
+		18677CB727EA5A380094DDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sadqa And Zakat FinalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SadqaAndZakat01.Sadqa-And-Zakat-FinalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sadqa And Zakat Final";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18677C8027EA5A360094DDE8 /* Build configuration list for PBXProject "Sadqa And Zakat Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18677CAD27EA5A380094DDE8 /* Debug */,
+				18677CAE27EA5A380094DDE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18677CAF27EA5A380094DDE8 /* Build configuration list for PBXNativeTarget "Sadqa And Zakat Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18677CB027EA5A380094DDE8 /* Debug */,
+				18677CB127EA5A380094DDE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18677CB227EA5A380094DDE8 /* Build configuration list for PBXNativeTarget "Sadqa And Zakat FinalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18677CB327EA5A380094DDE8 /* Debug */,
+				18677CB427EA5A380094DDE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18677CB527EA5A380094DDE8 /* Build configuration list for PBXNativeTarget "Sadqa And Zakat FinalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18677CB627EA5A380094DDE8 /* Debug */,
+				18677CB727EA5A380094DDE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18677C7D27EA5A360094DDE8 /* Project object */;
+}
